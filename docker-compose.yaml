@@ -47,9 +47,9 @@ services:
     - redis
     - catalogue
   shipping:
-    build: ./shipp
-    image: bindusri09/shipp:v2
-    container_name: shipp
+    build: ./shipping
+    image: bindusri09/shipping:v2
+    container_name: shipping
     depends_on:
     - mysql
     - cart
